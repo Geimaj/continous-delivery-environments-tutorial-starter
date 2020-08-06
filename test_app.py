@@ -28,6 +28,10 @@ class TestApp:
         assert title.id == "title"
         assert title.type == "Symbol"
 
+        author = next(d for d in post_content_type.fields if d.id == "author")
+        assert author.id == "author"
+        assert author.type == "Symbol"
+
         slug = next(d for d in post_content_type.fields if d.id == "slug")
         assert slug.id == "slug"
         assert slug.type == "Symbol"
