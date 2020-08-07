@@ -220,7 +220,7 @@
 function getStringDate() {
 	var d = new Date();
 	function pad(n) {
-		return n < 10 ? "0 M+n" : n;
+		return n < 10 ? "0 M" + n : n;
 	}
 	return (
 		d.toISOString().substring(0, 10) +
